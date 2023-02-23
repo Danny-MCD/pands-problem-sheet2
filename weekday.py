@@ -10,6 +10,8 @@ dc = datetime.now()
 # set x to weekday function in datetime module
 x = dc.weekday()
 
+# weekday() sets day of week to integer value starting Monday=0
+# if else commands used to seperate weekdays from weekend
 if (x<5):
     print("Today is a weekday")
 else:

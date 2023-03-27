@@ -123,6 +123,23 @@ The program will print
 "Hurray, It is the weekend" , if the current date puts it on the weekend when it is run.
 
 
+Weekly task 6
+Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
+
+You should create a function called <tt>sqrt</tt> that does this.
+
+I am asking you to create your own sqrt function and not to use the built in functions x ** .5 or math.sqrt(x).
+
+This is to demonstrate that you can research and code a process (If you really needed the square root you would use one of the above methods).
+
+I suggest that you look at the newton method at estimating square roots.
+
+This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
+
+
+-------------
+Introduction
+
 
 
 
@@ -139,4 +156,4 @@ References
 
 Stackoverflow (2018) Available at: https://stackoverflow.com/questions/26788266/collatz-sequence (Accessed: 20 Febuary 2023).
 
-Geeksforgeeks (2017) Available at: https://www.geeksforgeeks.org/python-datetime-weekday-method-with-example/ (Accessed: 27 February 2023)
+Geeksforgeeks (2021) Available at: https://www.geeksforgeeks.org/python-datetime-weekday-method-with-example/ (Accessed: 27 February 2023)

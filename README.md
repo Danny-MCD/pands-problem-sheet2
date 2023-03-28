@@ -140,7 +140,13 @@ This is a more difficult task than some of the others, but will be marked equall
 -------------
 Introduction
 
+The task recommended utilising the newton method for estimating square roots so this was researched initially. 
 
+In Newton’s Method, you start with any estimate of the square root, x.
+You then compute a new estimate for x using the equation x^{new}=\frac{x+\frac{n}{x}}{2}.
+You then update x with the new estimate x^{new}, and repeat the process until x and x^{new} do not change (or that the difference is “close enough”). (Python Programming, 2021)
+
+I then reserched the python program code used to implement the newton method. I started off defining a function called sqrt as called for that takes in a value n for the floating point number and a number l for the tolerance in accuracy. The formulae for newtons method of approximating square roots was then placed inside a while loop that would implemnt the mathematical operation on the floating point number and update the new value n with the new approximation each time until the values of n would be found to be within the tolerance l level defined initally. At which point the if statement would break the loop and the square root approximationw would be printed as output.
 
 
 
@@ -157,3 +163,5 @@ References
 Stackoverflow (2018) Available at: https://stackoverflow.com/questions/26788266/collatz-sequence (Accessed: 20 Febuary 2023).
 
 Geeksforgeeks (2021) Available at: https://www.geeksforgeeks.org/python-datetime-weekday-method-with-example/ (Accessed: 27 February 2023)
+
+Python Programming (2021) Available at: https://python.pages.doc.ic.ac.uk/2021/lessons/lesson04/04-applied/06-newtonhtml (Accessed: 28 March 2023)

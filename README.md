@@ -15,23 +15,101 @@
 
 ### Individual description of programmes
 
-### Week 1
-#### The inital week 1 task was not about the program helloworld.py which simply prints out Hello World
-#### But was to make us familiar with the enviroment in which we would be writing and saving code.
-#### Anaconda version of phython was installed in VScode and VScode was synced with a repository in GIthub to allow us push and pull information from github. To this end some of the important information learnt was to use the commands 
-#### Git add .
-#### git commit -m "commit message"
-#### git push
-#### input your passphrase
-#### To pull down information from the lecture notes. I would have to be in the partiular folder in terminal and then use the command
-#### Git pull 
-#### Which would pull down the latest information from the git hub repository
+Weekly Tasks 1
+For this week's tasks, 
+
+Please simply introduce yourself in the Discussion forum, 
+Install the required software on your machine,
+Pull the sample code in my repository to your machine,
+Create a GitHub account and repository for yourself (mywork), and the problem sheet (pands-problem-sheet)
+Commit and push a file to the problem sheet called helloworld.py
+This file should contain a python program that displays Hello World! when it is run.
+
+----------------------
+Introduction
+
+The first program tasked to create was helloworld.py which would print out Hello World! when run.
+A very simple program with only the use of the print function.
+
+It required familarisation with GitHub as it was required to create an account in GitHub and multiple repositories within that account as set out in the tasks. Specific repositories were then to be cloned to our personal computer where we would write and save code to them via VSCode. After writing the code the program would need to be pushed back to the repository on GitHub for review at a later date.
+
+The commands required to do this are set out below.
+
+For cloning the repository to our PC
+
+git clone PASTED.URL
+git config pull.rebase false
+git pull
 
 
-### Week 2
-#### Second weeks task was to write a program called bank.py that was to take two inputted ammounts in cents and sum these ammounts. Then finally convert to euros and print that total. Showed the use of the input function for taking in data into a program. Basic aritmatic in summing two values. Formatting and printing out of the total to the user.
+For pushing saved data in VSCode back to GitHub
 
-### Week 3
+git add .
+git commit -m "write any comments in here"
+git push
+
+
+For pulling data down to PC from GitHUb 
+
+git pull (when in the directory you want to update the information from)
+
+
+Calling the program
+The program is called with the commands 
+\\> python helloworld.py
+The program prints 
+    Hello World!
+
+
+Weekly Tasks 02
+When Banks are storing currency figures, they store them as integers (usually in cent).This is to avoid rounding errors. 
+
+Write a program called bank.py 
+
+The program should:
+
+Prompt the user and read in two money amounts (in cent)
+Add the two amounts
+Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount 
+
+
+---------------
+Introduction
+
+The program required a number of steps to have it work as directed in the task.
+
+The use of the input function in python to take in a value from the user. These were set to the integer class and assigned to a variable.
+
+THe simple sum function was used to add them. The total was then converted to euro by dividing by 100.
+
+Finally the prgram would terminate and print the formatted sentence to include the variable total and display it to the user with the required euro sign in front of the total.
+
+
+
+
+Calling the program
+The program is called with the commands 
+\\> python bank.py
+The program requests the user input an ammount in cents
+    Enter the first amount in cents:
+
+Once a number is inputted and RETURN pressed the program will print the second line
+    Enter the second amount in cents:
+
+Again once an ammount is entered the program will sum the two amounts and return the total in euro.
+    The sum of these is €
+    
+
+Weekly Task 03
+Bank account numbers can be stored as 10 character strings, for security reasons some applications only display the last 4 characters (with the  other characters replaced with Xs).
+
+Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
+
+Update to include wworking for a number of any lenght of characters
+--------------
+Introduction
+
+
 #### The third task was the creation of accounts.py program. It was to read in a 10 digit account number and send back the same account number with the first 6 digits replaced with X's.
 #### I learnt different ways to manipulate strings. To get the last 4 digits from the account number negative indexing was used to count back 4 digits from the end of the string of numbers and then splice these 4 numbers onto the 6 X's to complete the task.
 

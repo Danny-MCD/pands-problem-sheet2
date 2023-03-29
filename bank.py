@@ -6,7 +6,7 @@
 Amt1 = int(input("Enter the first amount in cents: "))
 Amt2 = int(input ("Enter the second amount in cents: "))
 
-# basic aritmatic of summing two variables that are integers
+# basic arithmetic of summing two variables that are integers
 sum = Amt1 + Amt2
 
 # conversion of integer ammount in cents to euro

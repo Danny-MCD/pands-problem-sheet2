@@ -1,21 +1,26 @@
-# pands-problem-sheet
+# **pands-problem-sheet**
 
-## A collection of weekly tasks for the Programming and Scripting module
-## in Computer Science HDip in Data Analytics course
+## ***A collection of weekly tasks for the Programming and Scripting module in Computer Science Higher Diploma in Data Analytics course***  
+  
 
-### List of weekly tasks and associated programs
-#### Week 1:    helloworld.py
-#### Week 2:    bank.py
-#### Week 3:    accounts.py
-#### Week 4:    collatz.py
-#### Week 5:    weekday.py
-#### Week 6:    squareroot.py
-#### Week 7:    es.py
-#### Week 8:    plottask.py
+~~~
 
-### Individual description of programmes
+List of weekly tasks and associated programs.
 
-Weekly Tasks 1
+- Week 1:    helloworld.py
+- Week 2:    bank.py
+- Week 3:    accounts.py
+- Week 4:    collatz.py
+- Week 5:    weekday.py
+- Week 6:    squareroot.py
+- Week 7:    es.py
+- Week 8:    plottask.py
+~~~
+
+
+## Individual Description of Programmes
+------------
+### Weekly Tasks 1
 For this week's tasks, 
 
 Please simply introduce yourself in the Discussion forum, 
@@ -25,8 +30,8 @@ Create a GitHub account and repository for yourself (mywork), and the problem sh
 Commit and push a file to the problem sheet called helloworld.py
 This file should contain a python program that displays Hello World! when it is run.
 
-----------------------
-Introduction
+
+### Introduction
 
 The first program tasked to create was helloworld.py which would print out Hello World! when run.
 A very simple program with only the use of the print function.
@@ -37,31 +42,34 @@ The commands required to do this are set out below.
 
 For cloning the repository to our PC
 
-git clone PASTED.URL
-git config pull.rebase false
-git pull
+- git clone PASTED.URL
+- git config pull.rebase false
+- git pull
 
 
 For pushing saved data in VSCode back to GitHub
 
-git add .
-git commit -m "write any comments in here"
-git push
+- git add .
+- git commit -m "write any comments in here"
+- git push
 
 
 For pulling data down to PC from GitHUb 
 
-git pull (when in the directory you want to update the information from)
+- git pull (when in the directory you want to update the information from)
 
 
-Calling the program
+### Calling the program
 The program is called with the commands 
+
+~~~
 \\> python helloworld.py
 The program prints 
     Hello World!
+~~~
 
+### Weekly Tasks 02
 
-Weekly Tasks 02
 When Banks are storing currency figures, they store them as integers (usually in cent).This is to avoid rounding errors. 
 
 Write a program called bank.py 
@@ -73,22 +81,22 @@ Add the two amounts
 Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount 
 
 
----------------
-Introduction
+### Introduction
 
 The program required a number of steps to have it work as directed in the task.
 
 The use of the input function in python to take in a value from the user. These were set to the integer class and assigned to a variable.
 
-THe simple sum function was used to add them. The total was then converted to euro by dividing by 100.
+The simple sum function was used to add them. The total was then converted to euro by dividing by 100.
 
 Finally the prgram would terminate and print the formatted sentence to include the variable total and display it to the user with the required euro sign in front of the total.
 
 
 
 
-Calling the program
+### Calling the program
 The program is called with the commands 
+~~~
 \\> python bank.py
 The program requests the user input an ammount in cents
     Enter the first amount in cents:
@@ -99,15 +107,17 @@ Once a number is inputted and RETURN pressed the program will print the second l
 Again once an ammount is entered the program will sum the two amounts and return the total in euro.
     The sum of these is €
     
+~~~
 
-Weekly Task 03
+### Weekly Task 03
 Bank account numbers can be stored as 10 character strings, for security reasons some applications only display the last 4 characters (with the  other characters replaced with Xs).
 
 Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
 Update to include working for a number of any lenght of characters
---------------
-Introduction
+
+
+### Introduction
 
 The third weekly task involved the creation of the accounts.py program. The purpose of the program was to be able to read in an account number as a string and print back out the number on the screen with the first 6 of 10 numbers replaced by X's.
 
@@ -118,8 +128,9 @@ These last 4 digits were then concantanated with 6X's before being displayed as 
 
 THe program will always display 6X's onto the start of the account number no matter how many digits it is copying over.
 
-Calling the program
+### Calling the program
 The program is called with the commands 
+~~~
 \\> python accounts.py
 The program requests the user input an account number
     Please enter account number:
@@ -128,17 +139,17 @@ The program requests the user input an account number
 
 xxxxxx8976
 The account number with the first 6 digits displayed as X's will be shown along with last 4 digits of the account number.
+~~~
 
-
-Weekly task 4
+### Weekly task 04
 Write a program, called collatz.py, that asks the user to input any positive integer and outputs the successive values of the following calculation.
 
 At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
 
 Have the program end if the current value is one.
 
------------------
-Introduction
+
+### Introduction
 The collatz conjecture is an unsolved problem from mathematics that looks to see whether repeating two simple arithmetic operations on a positive integer will eventually transform the number to 1.
 
 For this program various methods were looked at on stackoverflow (Stackoverflow, 2018). 
@@ -165,8 +176,9 @@ Each  value that n had throughout the program will be added into the sequence.
 
 
 
-Calling the program
+### Calling the program
 The program is called with the commands 
+~~~
 \\> python collatz.py
 The program prints 
     Enter Positive Integer: 
@@ -177,8 +189,8 @@ If a negative number is entered the program will show the collatz conjecture seq
 
 If floating point number or string is entered the program will display a ValueError and terminate.
 
-
-Weekly Task 05
+~~~
+### Weekly Task 05
 Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
 
 (You will need to search the web to find how you work out what day it is)
@@ -194,8 +206,8 @@ An example of running it on a Saturday is as follows:
 $ python weekday.py
 It is the weekend, yay!
 
-----------------------
-Introduction
+
+### Introduction
 
 This program would have to use the current date and be able to assess what day of the week it currently is. The datetime module was researched for this and the weekday function within it and how that is represented (Geeksforgeeks, 2017).
 
@@ -206,8 +218,9 @@ with Monday = 0, Tuesday = 1 and so on until Sunday = 6
 
 These representitive values for the weekday were used with a if else statement to print 1 statement for all weekdays up to 4 or Friday or else it would print a statement if current date showed it to be a weekend day of the week.
 
-Calling the program
+### Calling the program
 The program is called with the commands 
+~~~
 \\> python weekday.py
 
 The program takes in no input but will print
@@ -215,9 +228,9 @@ The program takes in no input but will print
 
 The program will print
 "Hurray, It is the weekend" , if the current date puts it on the weekend when it is run.
+~~~
 
-
-Weekly task 6
+### Weekly task 06
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
 You should create a function called <tt>sqrt</tt> that does this.
@@ -231,8 +244,7 @@ I suggest that you look at the newton method at estimating square roots.
 This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
 
 
--------------
-Introduction
+### Introduction
 
 The task recommended utilising the newton method for estimating square roots so this was researched initially. 
 
@@ -242,8 +254,9 @@ You then update x with the new estimate x^{new}, and repeat the process until x 
 
 I then reserched the python program code used to implement the newton method. I started off defining a function called sqrt as called for that takes in a value n for the floating point number and a number l for the tolerance in accuracy. The formulae for newtons method of approximating square roots was then placed inside a while loop that would implemnt the mathematical operation on the floating point number and update the new value n with the new approximation each time until the values of n would be found to be within the tolerance l level defined initally. At which point the if statement would break the loop and the square root approximation would be printed as output.
 
-Calling the program
+### Calling the program
 The program is called with the commands 
+~~~
 \\> python squareroot.py
 
 The program displays the message
@@ -252,14 +265,14 @@ The program displays the message
 
 The user inputted value of 67 was added in for clarity
 
-
-Weekly Task 7
+~~~
+### Weekly Task 07
 Write a program that reads in a text file and outputs the number of e's it contains. Think about what is being asked here, document any assumptions you are making.
 
 The program should take the filename from an argument on the command line. I have not shown you how to do this, you need to look it up.
 
----------------------
-Introduction
+
+### Introduction
 
 The program es.py required the use of some new techniques
 file = open(file_name, 'r')
@@ -274,12 +287,13 @@ For this to work the file used for testing must be located in the same directory
 
 Calling the program
 The program is called with the commands 
+~~~
 \\> python es.py mobydick.txt
 The program prints 
     The number of times the letter e is used in mobydick.txt
     58820
-
-Weekly Task 8
+~~~
+### Weekly Task 08
 Write a program called plottask.py that displays:
 
 a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
@@ -288,7 +302,6 @@ on the one set of axes.
 Some marks will be given for making the plot look nice (legend etc).
 
 
-----------------------
 Introduction
 
 The initial steps required the importation of the modules
@@ -297,15 +310,16 @@ matplotlib for its ability to be able to generate plots and numpy so that random
 The exponential curve of the function was then overlayed on top of the histogram.
 
 
-Calling the program
+### Calling the program
 The program is called with the commands 
+~~~
 \\> python plottask.py
 The program shows the plot
     "Histogram Distribution overlayed on Exponential Curve"
 
+~~~
 
-
-References
+### References
 
 
 

@@ -1,4 +1,4 @@
-# Program to print the statement "Hellow World!" when run
+# Program to print the statement "Hello World!" when run
 # Author: Daniel Mc Donagh
 
 

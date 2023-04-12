@@ -1,4 +1,4 @@
-# accepts a 10 digit account number and prints it with characters 1-6 replaced with X's
+# Program that accepts a 10 digit account number and prints it with characters 1-6 replaced with X's
 # Author: Daniel Mc Donagh
 
 AccNo = str(input("Please enter account no: "))

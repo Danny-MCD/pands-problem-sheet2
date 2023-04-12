@@ -105,13 +105,29 @@ Bank account numbers can be stored as 10 character strings, for security reasons
 
 Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
-Update to include wworking for a number of any lenght of characters
+Update to include working for a number of any lenght of characters
 --------------
 Introduction
 
+The third weekly task involved the creation of the accounts.py program. The purpose of the program was to be able to read in an account number as a string and print back out the number on the screen with the first 6 of 10 numbers replaced by X's.
 
-#### The third task was the creation of accounts.py program. It was to read in a 10 digit account number and send back the same account number with the first 6 digits replaced with X's.
-#### I learnt different ways to manipulate strings. To get the last 4 digits from the account number negative indexing was used to count back 4 digits from the end of the string of numbers and then splice these 4 numbers onto the 6 X's to complete the task.
+Research on the maunipulation of strings was looked at and slicing using negative indexing was found to be the simplest method when working from the end of the number back. Which fitted in perfectly with the update to be able to have the program work for a bank account number of any lenght. 
+
+The end of the string is set as index value -1 and slicing from -5:-1 will slice out the last 4 digits.
+These last 4 digits were then concantanated with 6X's before being displayed as the answer. Changes to the size of the account number would have no difference on the size of the end result.
+
+THe program will always display 6X's onto the start of the account number no matter how many digits it is copying over.
+
+Calling the program
+The program is called with the commands 
+\\> python accounts.py
+The program requests the user input an account number
+    Please enter account number:
+
+    Any integer of any lenght can be inputed.
+
+xxxxxx8976
+The account number with the first 6 digits displayed as X's will be shown along with last 4 digits of the account number.
 
 
 Weekly task 4
@@ -224,12 +240,68 @@ In Newton’s Method, you start with any estimate of the square root, x.
 You then compute a new estimate for x using the equation x^{new}=\frac{x+\frac{n}{x}}{2}.
 You then update x with the new estimate x^{new}, and repeat the process until x and x^{new} do not change (or that the difference is “close enough”). (Python Programming, 2021)
 
-I then reserched the python program code used to implement the newton method. I started off defining a function called sqrt as called for that takes in a value n for the floating point number and a number l for the tolerance in accuracy. The formulae for newtons method of approximating square roots was then placed inside a while loop that would implemnt the mathematical operation on the floating point number and update the new value n with the new approximation each time until the values of n would be found to be within the tolerance l level defined initally. At which point the if statement would break the loop and the square root approximationw would be printed as output.
+I then reserched the python program code used to implement the newton method. I started off defining a function called sqrt as called for that takes in a value n for the floating point number and a number l for the tolerance in accuracy. The formulae for newtons method of approximating square roots was then placed inside a while loop that would implemnt the mathematical operation on the floating point number and update the new value n with the new approximation each time until the values of n would be found to be within the tolerance l level defined initally. At which point the if statement would break the loop and the square root approximation would be printed as output.
+
+Calling the program
+The program is called with the commands 
+\\> python squareroot.py
+
+The program displays the message
+    Please enter a positive number: 67
+    The square root of 67.0 is 8.185352771872815
+
+The user inputted value of 67 was added in for clarity
 
 
+Weekly Task 7
+Write a program that reads in a text file and outputs the number of e's it contains. Think about what is being asked here, document any assumptions you are making.
+
+The program should take the filename from an argument on the command line. I have not shown you how to do this, you need to look it up.
+
+---------------------
+Introduction
+
+The program es.py required the use of some new techniques
+file = open(file_name, 'r')
+Was used to be able to open the file and read in the contents.
+The count function was used to determine the number of lower case "e" that are contained in the document.
+The final part of the program required the file name to be taken from an argument on the command line. 
+The command
+    file_name = sys.argv[1] 
+This sets the command line argument containing the txt file name to be used as the variable file_name 
+For this to work the file used for testing must be located in the same directory as the python program. I have added in mobydick.txt for testing purposes.
 
 
+Calling the program
+The program is called with the commands 
+\\> python es.py mobydick.txt
+The program prints 
+    The number of times the letter e is used in mobydick.txt
+    58820
 
+Weekly Task 8
+Write a program called plottask.py that displays:
+
+a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
+and a plot of the function  h(x)=x3 in the range [0, 10], 
+on the one set of axes.
+Some marks will be given for making the plot look nice (legend etc).
+
+
+----------------------
+Introduction
+
+The initial steps required the importation of the modules
+matplotlib for its ability to be able to generate plots and numpy so that random numbers can be generated.
+1000 numbers were then generated with a preset mean and standard deviation which were then imported into a histogram plot. The plot had its axis's labelled and legend created to better explain it.
+The exponential curve of the function was then overlayed on top of the histogram.
+
+
+Calling the program
+The program is called with the commands 
+\\> python plottask.py
+The program shows the plot
+    "Histogram Distribution overlayed on Exponential Curve"
 
 
 
